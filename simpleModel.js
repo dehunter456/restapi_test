@@ -1,5 +1,5 @@
 const mongoose = require('mongoose');
-
+// A stupid schema I made
 let simpleSchema = mongoose.Schema({
   foo: {
     type: String,

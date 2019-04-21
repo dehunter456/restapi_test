@@ -1,5 +1,6 @@
-Simple = require("./simpleModel");
+Simple = require("./simpleModel"); // The schema (class) we will use to do this stuff
 
+// The index function just lets us get the simple objects from the db
 exports.index = function (req, res) {
   Simple.get((err, data) => {
     if (err) {
@@ -17,6 +18,7 @@ exports.index = function (req, res) {
   });
 }
 
+// The new function creates a new Simple object in the db
 exports.new = function (req, res) {
   let simple = new Simple();
   simple.foo = req.body.foo;
@@ -33,6 +35,7 @@ exports.new = function (req, res) {
   });
 }
 
+// Lets us view individual Simple objects
 exports.view = function (req, res) {
   Simple.findById(req.params.id, (err, data) => {
     if (err) {
