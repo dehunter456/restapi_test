@@ -7,4 +7,4 @@ Learned how to create a RESTful api from this tutorial: https://medium.com/@diny
 Used: Node.js, Express, and MongoDB
 
 # what this app actually does
-Really this app uses a Schema to create a simple af document with 2 properties. You can create and view documents and that's about it ¯\_(ツ)_/¯.
+Really this app uses a Schema to create a simple af document with 2 properties. You can create and view documents and that's about it ¯\\_(ツ)_/¯.
